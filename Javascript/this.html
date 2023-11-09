@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>This keyword</title>
+  </head>
+  <body>
+    <script>
+        var person={
+            firstname:"madhuri",
+            lastname:"vasannagari",
+            age:29,
+            mobile:9110592367,
+            company:"Entri",
+            fullname: function(){
+                console.log(this.firstname + this.lastname);
+            },
+            smile: function(){
+                console.log(this.firstname,"is Smiling")
+            }
+        }
+       
+      console.log(person.mobile);
+      console.log(person.fullname());
+      console.log(person.smile());
+      console.log(person.age);
+
+    </script>
+
+    
+  </body>
+</html>

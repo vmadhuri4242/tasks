@@ -1,0 +1,50 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Find element by Id</title>
+  </head>
+  <body>
+    <input type="text"id="username"onblur="blurevent()"/>
+    <input type="text"id="password"onfocus="focusevent()"/>
+    <input type="text"id="select"value="some value"onselect="selecthandler()"/>
+    <input type="button"id="reset"value="reset"onclick="reseteevent()"/>
+    <input type="text"onkeypress="keypressevent()"/>
+    <input type="text"onkeydown="keydownevent()"/>
+    <input type="text"onkeyup="keyupevent()"/>
+    <script>
+        function blurevent(){
+            var username=document.getElementById("username")
+            console.log(username.value)
+        }
+        function focusevent(){
+            var password=document.getElementById("password")
+            password.style.border="1px solid black"
+            password.style.backgroundColor="blue"
+        }
+        function selecthandler(){
+            alert("text is selceted")
+        }
+        function reseteevent(){
+            var element=document.getElementById("reset")
+            console.log("reset the value")
+        }
+        function keypressevent(){
+            alert("key has been pressed inside the input text filed")
+        }
+        function keydownevent(){
+            alert("key has been down inside the input text filed")
+        }
+       function keyupevent(){
+           alert("key has been up ")
+       }
+       
+    </script>
+
+    
+  </body>
+</html>

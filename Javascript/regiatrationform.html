@@ -1,0 +1,49 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>Find element by Id</title>
+  </head>
+  <body>
+    <h1 align="center">Registration Form</h1>
+    <div align="center">
+        <label>Username:</label>
+        <input type="text"value=""id="username"/><br><br>
+        <label>Password:</label>
+        <input type="password" value=""id="password"/><br><br>
+        <label>Mobilenumber:</label>
+        <input type="text"value=""id="mobilenumber"/><br><br>
+        <label>Dateofbirth:</label>
+        <input type="date" value=""id="dateofbirth"/><br><br>
+        <label>Gender:</label>
+        <input type="radio" value=""class="gender"/>male
+        <input type="radio" value=""class="gender"/>female<br><br>
+        <input type="button" value="signup" onclick="signup()"/>
+    </div>
+    <script>
+      function signup(){
+        var username=document.getElementById("username")
+        var password=document.getElementById("password")
+        var mobilenumber=document.getElementById("mobilenumber")
+        var Dateofbirth=document.getElementById("dateofbirth")
+        var Gender=document.getElementsByClassName("gender")
+        var signup=document.getElementById("Signup")
+        console.log(username.value);
+        console.log(password.value);
+        console.log(mobilenumber.value);
+        console.log(dateofbirth.value);
+        console.log(gender.value);
+        console.log(signup.value);
+      }
+    </script>
+
+
+    
+
+    
+  </body>
+</html>

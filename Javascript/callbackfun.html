@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <script>
+       function add(value1,value2,fn){
+        console.log(value1+value2)
+        fn()
+       }
+       function callBackfn(){
+        console.log("sum is calculated")
+       }
+       add(5,5,callBackfn);
+    </script>
+
+    
+  </body>
+</html>

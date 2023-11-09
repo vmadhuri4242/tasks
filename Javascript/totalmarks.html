@@ -1,0 +1,35 @@
+<!Doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>total marks by using function</title>
+  </head>
+  <body>
+    <script>
+       
+       var marks={
+        telugu:98,
+        hindi:99,
+        english:100,
+        maths:89,
+        science:90,
+        social:78,
+        totalMarks:function(){
+            return("total:",marks.telugu+marks.hindi+marks.english+marks.maths+marks.science+marks.social)
+        }, 
+        percentage:function(){
+            return this.totalMarks()/6
+        }
+        
+    }
+     console.log(marks.totalMarks());
+     console.log(marks.percentage());
+    </script>
+
+    
+  </body>
+</html>
